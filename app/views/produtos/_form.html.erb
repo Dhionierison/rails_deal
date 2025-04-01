@@ -1,0 +1,18 @@
+<%= simple_form_for @produto do |f| %>
+  <% if @produto.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(@produto.errors.count, "error") %> prohibited this produto from being saved:</h2>
+      <ul>
+        <% @produto.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.input :nome, label: 'Nome do Produto' %>
+  <%= f.input :preco, as: :decimal %>
+  <%= f.input :quantidade, as: :integer %>
+
+  <%= f.button :submit, class: 'btn btn-primary' %>
+<% end %>
