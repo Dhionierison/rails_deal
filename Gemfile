@@ -26,6 +26,14 @@ gem "simple_form", "~> 5.1"
 
 gem "ransack", "~> 4.2"
 
+gem "bootstrap", "~> 5.3"
+
+gem "sassc-rails" # Já deve estar instalado, mas é bom garantir
+
+
+
+
+
 
 
 
