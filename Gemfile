@@ -18,7 +18,7 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-gem "pagy", "~> 5.7"
+gem "pagy", "~> 9.3"
 
 gem "devise", "~> 4.9"
 
